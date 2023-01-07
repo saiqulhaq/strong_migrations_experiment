@@ -32,7 +32,7 @@ module StrongMigrations
     # Good to have feature is ability to customize the route and how to make it secure
     def remove_column(table_name, column_name, type = nil, **options)
       binding.pry
-      super(table_name, column_name, type = nil, **options)
+      super(table_name, column_name, type, options)
     end
 
     def stop!(message, header: "Custom check")
