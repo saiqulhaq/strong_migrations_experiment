@@ -71,5 +71,5 @@ group :test do
   gem "webdrivers"
 end
 
-gem "strong_migrations"
+gem "strong_migrations", path: "strong_migrations"
 gem "pry-rails"
