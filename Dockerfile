@@ -5,6 +5,7 @@ WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 ADD strong_migrations /myapp/strong_migrations
+ADD stronger_migrations /myapp/stronger_migrations
 RUN bundle install
 
 # Add a script to be executed every time the container starts.

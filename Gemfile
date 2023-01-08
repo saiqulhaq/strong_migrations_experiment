@@ -73,3 +73,5 @@ end
 
 gem "strong_migrations", path: "strong_migrations"
 gem "pry-rails"
+
+gem 'stronger_migrations', path: 'stronger_migrations'

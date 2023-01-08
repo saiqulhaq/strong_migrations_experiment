@@ -26,15 +26,6 @@ module StrongMigrations
       end
     end
 
-    # TODO
-    # 1. Modify Rails route to create a new endpoint to list out the ignored columns
-    # 2. Create a new Controller, related to number 1
-    # Good to have feature is ability to customize the route and how to make it secure
-    def remove_column(table_name, column_name, type = nil, **options)
-      binding.pry
-      super(table_name, column_name, type, options)
-    end
-
     def stop!(message, header: "Custom check")
       raise StrongMigrations::UnsafeMigration, "\n=== #{header} #strong_migrations ===\n\n#{message}\n"
     end
